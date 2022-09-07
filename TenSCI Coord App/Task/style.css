@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+#body{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 180px;
+    background-color: #FFBF00;
+}
+#cards{
+    display: grid;
+    row-gap: 80px;
+    column-gap: 200px;
+    grid-template-columns: repeat(3,250px);
+}
+.card{
+    padding: 10px;
+    background-color: #FF922B;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #FEDD9E; 
+    border-width: 3px; 
+    transition: transform .5s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card:hover{
+    transform: scale(1.2);
+}
+.name{
+    font-size: 25px;
+    text-align: center;
+}
+.height,.mass,.birthyr,.gender{
+    font-size: 18px;
+}
